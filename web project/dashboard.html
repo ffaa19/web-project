@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task & Notes Manager</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+<header>
+    <h1>Dashboard</h1>
+    <p>Manage your tasks and notes</p>
+</header>
+
+<main class="container">
+
+    <section class="box">
+        <h2>Tasks Manager</h2>
+        <div id="tasks-root"><p class="placeholder">No tasks yet.</p></div>
+    </section>
+
+    <section class="box">
+        <h2>Notes Manager</h2>
+        <form method="post" class="note-form">
+            <input type="text" name="note" placeholder="Write a short note..." style="background-color: #e6e7e9;" required>
+            <button type="submit">Add Note</button>
+        </form>
+
+        <ul class="notes-list">
+            <li>
+                Your first note!
+                <button class="delete">Delete</button>
+            </li>
+        </ul>
+    </section>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 To-Do & Notes Manager</p>
+</footer>
+
+</body>
+</html>

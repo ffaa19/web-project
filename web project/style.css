@@ -1,0 +1,135 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* Body */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #eeeeee;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background-color: #bb2c97;
+    color: rgb(228, 214, 214);
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+/* Container for two columns */
+.container {
+    display: flex;
+    flex: 1;
+    min-height: calc(100vh - 160px); /* Approx header + footer */
+}
+
+/* Left column */
+.left {
+    background-image: url("background.jpeg");
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.212);
+    
+    display: flex;
+  flex-direction: column;
+  justify-content: center;   /* vertical centering */
+  height: 100%;
+  padding: 80px;
+  line-height: 2rem;
+}
+
+/* Right column */
+.right {
+    width: 50%;
+    background-image: url("to-do.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main Content */
+.main-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Intro Section */
+.intro {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+    color: #0d505a;
+    font-size: 2rem;
+    
+}
+h3{
+    color: #07505c;
+    font-size: 1.5rem;
+}
+/* Buttons Section */
+.buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    text-decoration: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    color: rgb(228, 214, 214);
+    font-weight: bold;
+}
+
+.login {
+    background-color: #138496;
+}
+
+.login:hover {
+    background-color: seagreen;
+}
+
+.register {
+    background-color: #b1106e;
+}
+
+.register:hover {
+    background-color: #5936a2;
+}
+
+/* Footer */
+.footer {
+    background-color: #8f1a71;
+    color: #ccc;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .header h1 {
+        font-size: 1.6rem;
+    }
+    .container {
+        flex-direction: column;
+    }
+    .left, .right {
+        width: 100%;
+    }
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
